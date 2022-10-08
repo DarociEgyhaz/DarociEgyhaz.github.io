@@ -1,0 +1,20 @@
+{
+    "name": "Pl\u00e9b\u00e1nia",
+    "short_name": "Pl\u00e9b\u00e1nia",
+    "icons": [
+        {
+            "src": "/assets/icons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/icons/android-chrome-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#f5f5dc",
+    "background_color": "#f5f5dc",
+    "start_url": "https://darociegyhazkozseg.com/",
+    "display": "standalone"
+}
