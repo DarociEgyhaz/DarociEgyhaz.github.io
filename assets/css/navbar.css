@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Proxima+Nova&display=swap');
+.navbar {
+    z-index: 100;
+    font-family: 'Heebo', sans-serif;
+    display: flex;
+    position: sticky;
+    top: 1vh;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgba(248, 240, 198, 0.4);
+    backdrop-filter: saturate(180%) blur(20px);
+    color: white;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    float: right;
+    clear: both;
+    user-select: none;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(255, 228, 196, 0.2);
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.nav-active {
+    cursor: pointer;
+}
+
+.nav-logo {
+    position: relative;
+    font-family: 'Arial Rounded MT', 'Segoe UI', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: .5rem;
+    left: .7rem;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links {
+    height: 100%;
+    z-index: 99;
+}
+
+.nav-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    padding: 1rem;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links li:hover {
+    background-color: rgba(248, 240, 198, 0.4);;
+    border-radius: 20px;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 95%;
+    background-color: white;
+    border-radius: 10px;
+    margin: 8%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: rgba(248, 240, 198, 0.4);
+        backdrop-filter: saturate(180%) blur(20px);
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-links ul {
+        width: 100%;
+        flex-direction: column;
+        backdrop-filter: saturate(100%) blur(20px);
+    }
+
+    .nav-links ul li {
+        text-align: center;
+    }
+
+    .nav-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
