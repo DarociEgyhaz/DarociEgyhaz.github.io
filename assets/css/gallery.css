@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 1;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html, body {
+    z-index: 1;
+    font-family: 'Heebo', sans-serif;
+    font-size: 1rem;
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    width: auto!important;
+    overflow-x: hidden!important;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("/assets/images/bkg3.webp");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    line-height: 1.5;
+}
+
+header {
+    font-family: 'Arial Rounded MT', 'Segoe UI', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    top: 8%;
+    padding: 1vh;
+    text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+    header {
+        font-size: 0.8rem;
+        top: 10%;
+    }
+}
+
+.alink {
+    text-decoration: none;
+    color: #fff;
+}
+
+#centermain {
+    position: relative;
+    top: 10%;
+}
+
+img {
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(248, 240, 198, 0.2)
+}
+
+.container {
+    position: relative;
+    justify-content: center;
+    width: 90%;
+    margin: 50px auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.card {
+    width: 20%;
+    background-color: rgba(248, 240, 198, 0.5);
+    backdrop-filter: saturate(180%) blur(20px);
+    margin-bottom: 50px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(248, 240, 198, 0.2)
+}
+
+.card-header {
+    text-align: center;
+    padding: 20px 10px;
+    background-color: rgba(222, 207, 172, 0.6);
+    color: #fff;
+    text-shadow:rgba(0, 0, 0, 0.30) 1px 1px 10px;
+    border-radius: 30px 30px 0 0;
+    -webkit-border-radius: 30px 30px 0 0;
+    -moz-border-radius: 30px 30px 0 0;
+    -ms-border-radius: 30px 30px 0 0;
+    -o-border-radius: 30px 30px 0 0;
+}
+
+.card-body {
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 1000px) {
+    .card {
+      width: 40%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .container {
+      width: 100%;
+    }
+
+    .heading {
+      padding: 20px;
+      font-size: 20px;
+    }
+
+    .card {
+      width: 80%;
+    }
+}
